@@ -1,0 +1,184 @@
+.sub-title {}
+
+.title-hd {
+    margin-bottom: 10px;
+}
+
+.mt-cus {
+    margin-top: 40px;
+
+    @media (max-width: 1199px) {
+        margin-top: 32px;
+    }
+
+    @media (max-width: 575px) {
+        margin-top: 24px;
+    }
+}
+
+.mb-cus {
+    margin-bottom: 40px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 32px;
+    }
+
+    @media (max-width: 575px) {
+        margin-bottom: 24px;
+    }
+}
+
+.mb-title {
+    margin-bottom: 24px;
+
+    @media (max-width: 575px) {
+        margin-bottom: 16px;
+    }
+}
+
+.pt-32 {
+    padding-top: 32px;
+
+    @media (max-width: 991.5px) {
+        padding-top: 24px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 16px;
+    }
+}
+
+.pb-32 {
+    padding-bottom: 32px;
+
+    @media (max-width: 991.5px) {
+        padding-bottom: 24px;
+    }
+
+    @media (max-width: 575px) {
+        padding-bottom: 16px;
+    }
+}
+
+.mt-title {
+    margin-bottom: 24px;
+
+    @media (max-width: 575px) {
+        margin-bottom: 16px;
+    }
+}
+
+.mb-title-sm {
+    margin-bottom: 16px;
+
+    @media (max-width: 575px) {
+        margin-bottom: 10px;
+    }
+}
+
+.pt-24 {
+    padding-top: 24px;
+
+    @media (max-width: 575px) {
+        padding-top: 16px;
+    }
+}
+
+.pb-24 {
+    padding-top: 24px;
+
+    @media (max-width: 575px) {
+        padding-top: 16px;
+    }
+}
+
+.pt-16 {
+    padding-top: 16px;
+
+    @media (max-width: 575px) {
+        padding-top: 8px;
+    }
+}
+
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.fsz-18 {
+    line-height: 150%;
+
+    @media (max-width: 575px) {
+        line-height: 130%;
+    }
+}
+
+.fz-18 {
+    font-size: 18px;
+    line-height: 150%;
+
+    @media (max-width: 575px) {
+        font-size: 16px;
+        line-height: 130%;
+    }
+}
+
+.fz-16 {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.t-title {
+    font-size: 32px;
+    line-height: 130%;
+
+    @media (max-width: 991.5px) {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 18px;
+    }
+}
+
+.cl-primary {
+    color: var(--color-primary) !important;
+}
+
+.t-underline {
+    text-decoration: underline !important;
+    text-underline-position: under;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.fw-5 {
+    font-weight: 600;
+}
+
+.fw-4 {
+    font-weight: 600;
+}

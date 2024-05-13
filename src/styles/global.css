@@ -1,0 +1,27 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "~line-awesome/dist/line-awesome/css/line-awesome.min.css";
+/* @import './css/lib/all.min.css'; */
+@import './css/lib/bootstrap.min.css';
+
+.container {
+  @apply max-w-[1280px] px-[12px] md:px-[16px] w-full mx-auto xl:px-[0px];
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.btn {
+  @apply flex-center text-white bg-primary hover:bg-primary font-semibold rounded-[12px] text-[14px] md:text-[16px] px-[16px] py-[10px] focus:outline-none;
+}
+
+a {
+  @apply text-blue-700;
+}
+
+/* a:hover {
+  @apply border-b-2 border-blue-700;
+} */

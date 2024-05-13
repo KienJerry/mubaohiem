@@ -1,0 +1,139 @@
+/* --------------- buttons style --------------- */
+.butn {
+  padding: 15px 30px;
+  transition: all 0.2s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  &.margin-none {
+    margin: 0 0 20px 0 !important;
+  }
+
+  >svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.md-butn {
+    padding: 10px 20px;
+  }
+
+  &:hover {
+    // box-shadow: inset 0px 0px 50px #0003 , 4px 5px 0 #0005;
+    box-shadow: 4px 5px 0 #0005;
+    box-shadow: 7px 10px 15px #0004;
+    transform: translateY(-2px);
+  }
+
+  &:disabled {
+    cursor: no-drop;
+  }
+}
+
+.btn-compare{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  gap: 1rem;
+  position: relative;
+  border-radius: var(--rs);
+
+  // background: var(--c-second);
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1540%;
+  padding: 1rem 2rem;
+
+  >* {
+    position: relative;
+    z-index: 2;
+    transition: all .3s ease-in-out
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    // background: $color;
+    transition: all 0.4s ease;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: white;
+
+    &:after {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &-more {
+    color: var(--color-primary) !important;
+
+    &:hover {
+      color: var(--color-primary) !important;
+    }
+  }
+}
+
+.btn-arr {
+  margin-left: 0.4rem;
+
+  > {
+    transition: all .3s;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &-icon {
+    &.--first {
+      animation: arrAni 1.6s linear 0.2s infinite;
+    }
+
+    &.--second {
+      animation: arrAni 1.8s linear 0.4s infinite;
+      margin-left: -6px;
+    }
+  }
+}
+
+.btn-gr {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+
+  @media (max-width: 1199px) {
+    gap: 16px;
+  }
+
+  @media (max-width: 575px) {
+    gap: 8px;
+  }
+}
+
+
+@keyframes arrAni {
+  50% {
+    opacity: 0;
+  }
+}

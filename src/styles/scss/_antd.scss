@@ -1,0 +1,123 @@
+.ant-select-selection-placeholder {
+  color: #B39E99 !important;
+}
+
+.ant-select-selector {
+  &:hover {
+    border-color: #FF9E00 !important;
+  }
+
+  &.ant-select-focused {
+    border-color: #FF9E00 !important;
+  }
+}
+
+.ant-popconfirm-message-text {
+  .ant-popconfirm-title {
+    color: red !important;
+  }
+}
+
+.ant-popconfirm-buttons {
+  .ant-btn-primary {
+    background-color: #FF9E00 !important;
+
+    &:hover {
+      background-color: #f7ac33 !important;
+    }
+  }
+
+  .ant-btn-default {
+    &:hover {
+      color: #FF9E00 !important;
+      border-color: #FF9E00 !important;
+    }
+  }
+}
+
+.ant-pagination-options {
+  display: none !important;
+}
+
+.ant-pagination-item-active {
+  background-color: #FF9E00 !important;
+  border: 1px solid #FF9E00 !important;
+  color: white !important;
+}
+
+.ant-pagination-item {
+  border: 1px solid #dedede !important;
+}
+
+.ant-popconfirm-message-icon,
+.ant-modal-footer {
+  display: none;
+}
+
+.ant-modal-title {
+  font-size: 18px !important;
+  margin-bottom: 16px !important;
+}
+
+.ant-modal-content {
+  margin: 0 16px;
+}
+
+.ant-steps-item-finish {
+  .ant-steps-item-icon {
+    background-color: #FFF7E6 !important;
+    border-color: #FFF7E6 !important;
+
+    .ant-steps-icon {
+      color: #FF9E00 !important;
+    }
+  }
+
+
+  .ant-steps-item-title {
+    &::after {
+      background-color: #FF9E00 !important;
+    }
+  }
+}
+
+.ant-steps-item-wait {
+  .ant-steps-icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+
+    >i {
+      font-size: 14px;
+      filter: brightness(0) saturate(100%);
+    }
+  }
+}
+
+.ant-steps-item-custom {
+  .ant-steps-icon {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: transparent;
+    border-radius: 32px;
+  }
+}
+
+.ant-steps-item-active {
+  .ant-steps-item-icon {
+    background-color: #FF9E00 !important;
+    border-color: #FF9E00 !important;
+
+    .ant-steps-icon {
+      color: white !important;
+
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+
+      >i {
+        font-size: 14px;
+      }
+    }
+  }
+}

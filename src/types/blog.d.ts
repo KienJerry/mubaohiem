@@ -1,0 +1,38 @@
+type TPost = {
+  author: {
+    url: null | string,
+    author_id: number,
+    author_url: string,
+    creation_time: null | string,
+  },
+  author_id: number,
+  canonical_url: string,
+  category_id: null | number,
+  content_heading: null | string,
+  creation_time: string,
+  end_time: null | string,
+  featured_image: string,
+  featured_img_alt: null | string,
+  featured_list_image: string,
+  featured_list_img_alt: null | string,
+  first_image: string,
+  identifier: string,
+  is_active: number,
+  page_layout: null | string,
+  position: number,
+  post_id: number,
+  post_url: string,
+  publish_time: string,
+  search: null | string,
+  title: string,
+  type: null | string,
+  update_time: string,
+  views_count: number,
+}
+
+type ResBlogPost = {
+  items: TPost[],
+  total_count: number,
+  total_pages: number,
+  type: null | any,
+}

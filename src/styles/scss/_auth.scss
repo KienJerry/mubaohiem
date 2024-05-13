@@ -1,0 +1,211 @@
+.wrapper-auth-social {
+  padding: 16px 0;
+
+  .ctn-title {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+
+    .line {
+      width: 100%;
+      flex: 1;
+      height: 1px;
+      background-color: rgb(221, 221, 221);
+    }
+
+    >p {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  .div-socials {
+    margin-top: 8px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 32px !important;
+      height: 32px !important;
+      position: unset !important;
+      object-fit: contain;
+    }
+  }
+}
+
+.bg-btn-profile{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.account-tab {
+
+  .txt-header-profile {
+    margin-bottom: 16px;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+
+    .line {
+      flex: 1;
+      height: 1px;
+      background-color: rgb(231, 231, 231);
+    }
+
+    .btn-address {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 14px;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  }
+
+  .btn-gr {
+    width: fit-content;
+    margin-left: auto;
+    justify-content: space-between;
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+
+  }
+
+  .btn-save-addr {
+    @media (max-width: 575px) {
+      width: calc(100% - 8px);
+    }
+  }
+
+  .btn-delete-prod {
+    @media (max-width: 575px) {
+      width: calc(100% - 8px);
+    }
+  }
+
+  .wrapper-line {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 16px 0;
+    color: rgb(169, 169, 169);
+    font-size: 14px;
+
+    .line {
+      flex: 1;
+      width: 100%;
+      height: 1px;
+      background-color: rgb(223, 223, 223);
+    }
+
+  }
+
+  .col-lg-6 {
+    width: 50% !important;
+
+    @media (max-width: 575px) {
+      width: 100% !important;
+    }
+  }
+
+  .btn-save-acc {
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
+
+  .butn {
+    @media (max-width: 575px) {
+      padding: 8px 16px;
+      font-size: 12px !important;
+    }
+  }
+
+}
+
+@media (max-width: 991.5px) {
+  .main-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  // .profile-pg-1 .tc-profile .tabs-side .main-info .img {
+  //   height: 48px;
+  //   border-radius: 100%;
+  // }
+}
+
+.btn-right-modal {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+
+  &.add {
+    background-color: green;
+  }
+
+  &.remove {
+    background-color: red;
+  }
+}
+
+.btn-ic-form {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--color-red2);
+  overflow: hidden;
+
+  &:hover {
+    i {
+      animation: wobble-hor-bottom 0.8s both;
+    }
+  }
+}
+
+.spinner-loading-custom {
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(18, 18, 18, 0.06);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,113 @@
+.wrapper-order-lookup {
+
+  .ctn-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px 0;
+    padding: 16px ;
+    background-color: white;
+    border-radius: 10px;
+
+    @media screen and (max-width: 991px) {
+      >img {
+        display: none;
+      }
+
+      .ctn-form-order-lookup {
+        width: 70%;
+        flex: none !important;
+      }
+    }
+
+    .ctn-form-order-lookup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 2;
+      width: 100%;
+
+      @include mobile {
+        align-items: flex-start;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 40%;
+
+        @include mobile {
+          width: 100%;
+        }
+        // input {
+        //   width: 50% !important;
+        // }
+      }
+
+
+      @include mobile {
+        width: 100%;
+      }
+
+      >p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .input-form-order-lookup {
+        border: 1px solid #ccc;
+        height: 40px;
+        width: 100%;
+        border-radius: 6px;
+        padding-left: 10px;
+
+        &::placeholder {
+          color: rgb(193, 193, 193);
+        }
+      }
+    }
+
+    >img {
+      flex: 1.5;
+    }
+  }
+}
+
+.f-button {
+  display: flex;
+  background-color: var(--color-green2);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+  width: fit-content;
+  cursor: pointer;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @include mobile {
+    font-size: 0.7rem;
+    gap: 5px;
+  }
+
+  &:hover {
+    box-shadow: 7px 3px 15px rgba(0, 0, 0, 0.2666666667);
+    background: #04c504;
+  }
+}
+
+.wp-cms-page {
+  padding: 16px 30px;
+  margin: 16px 0;
+  background-color: white;
+  border-radius: 10px;
+}
