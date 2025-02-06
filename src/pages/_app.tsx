@@ -44,6 +44,7 @@ const MyApp = ({ Component, pageProps }: TAppPropsWithLayout) => {
       <ApolloProvider client={client}>
         <QueryClientProvider client={queryClient}>
           <PersistGate loading={null} persistor={persistor}>
+          {() => (
             <ConfigProvider touch-action="pan-x pan-y">
               <ToastContainer />
               <SWRConfig value={{ revalidateOnFocus: false, shouldRetryOnError: false }}>
@@ -58,6 +59,7 @@ const MyApp = ({ Component, pageProps }: TAppPropsWithLayout) => {
                 </Layout>
               </SWRConfig>
             </ConfigProvider>
+             )}
           </PersistGate>
         </QueryClientProvider>
       </ApolloProvider>

@@ -8,15 +8,15 @@ interface ICreateLocalType {
 export const __CreateDataLocal = (props: ICreateLocalType): boolean | void => {
   switch (props.type) {
     case 'object': {
-      localStorage.setItem(props.key, JSON.stringify(props.data))
+      typeof window !== 'undefined' && localStorage?.setItem(props.key, JSON.stringify(props.data))
       return
     }
     case 'string': {
-      localStorage.setItem(props.key, props.data)
+      typeof window !== 'undefined' && localStorage?.setItem(props.key, props.data)
       return
     }
     case 'array': {
-      const getExistingData = localStorage.getItem(props.key)
+      const getExistingData = localStorage?.getItem(props.key)
       let cloneDataArray = getExistingData ? JSON.parse(getExistingData) : []
       const existingItemIndex = cloneDataArray.findIndex((item: any) => item?.id === props.data?.id)
       if (existingItemIndex !== -1) {
@@ -24,7 +24,7 @@ export const __CreateDataLocal = (props: ICreateLocalType): boolean | void => {
       } else {
         cloneDataArray.push(props.data)
       }
-      localStorage.setItem(props.key, JSON.stringify(cloneDataArray))
+      localStorage?.setItem(props.key, JSON.stringify(cloneDataArray))
       return existingItemIndex === -1
     }
     default:
@@ -36,14 +36,14 @@ export const __CreateDataLocal = (props: ICreateLocalType): boolean | void => {
 export const __getDataLocal = (props: ICreateLocalType) => {
   switch (props.type) {
     case 'object': {
-      const existingDataString = localStorage.getItem(props?.key)
+      const existingDataString = localStorage?.getItem(props?.key)
       return existingDataString ? JSON.parse(existingDataString) : null
     }
     case 'string': {
-      return localStorage.getItem(props?.key)
+      return   typeof window !== 'undefined' && localStorage?.getItem(props?.key)
     }
     case 'array': {
-      const existingDataString = localStorage.getItem(props?.key)
+      const existingDataString = localStorage?.getItem(props?.key)
       return existingDataString ? JSON.parse(existingDataString) : null
     }
     default:
@@ -53,18 +53,18 @@ export const __getDataLocal = (props: ICreateLocalType) => {
 
 // Remove
 export const __RemoveItemLocal = (props: ICreateLocalType) => {
-  return localStorage.removeItem(props?.key)
+  return localStorage?.removeItem(props?.key)
 }
 
 //Remove single item
 export const __RemoveSingleItemLocal = (props: ICreateLocalType) => {
-  const getExistingData = localStorage.getItem(`${props.key}`)
+  const getExistingData = localStorage?.getItem(`${props.key}`)
   let cloneDataArray = getExistingData ? JSON.parse(getExistingData) : []
   const existingItemIndex = cloneDataArray.findIndex((item: any) => item?.id === props?.data?.id)
 
   if (existingItemIndex !== -1) {
     cloneDataArray.splice(existingItemIndex, 1)
-    localStorage.setItem(`${props?.key}`, JSON.stringify(cloneDataArray))
+    localStorage?.setItem(`${props?.key}`, JSON.stringify(cloneDataArray))
 
     return true
   }
